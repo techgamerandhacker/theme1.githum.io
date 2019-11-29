@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="A.css">
+
+
+	<title></title>
+</head>
+
+<body onload="startTime()">
+
+	<script type="text/javascript">
+		function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+		function togglemenu() {
+			document.getElementById('sidebar').classList.toggle('active');
+		}
+
+	</script>
+
+
+
+
+	<div id="logo"><img src="images/images (1).png"></div>
+	<div id="txt"></div>
+	<div id="sidebar" onclick="togglemenu()">
+		<div class="toggle-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+			<ul>
+			<li><a href="Home.htm">home</a></li>
+			<li><a href="Contact.htm">contact us</a></li>
+			<li><a href="About.htm">about us</a></li>
+			<li><a href="portfolio.htm">portfolio</a></li>
+
+		</ul>
+	</div>
+<div class="background">
+	<div class="w1"></div><br>
+	<div class="w2"></div><Br>
+	<div class="w3"></div><Br>
+	<div class="w4"></div>
+<div class="curve">
+		<p style="font-family: arial black;font-size: 80px; color: white;
+		text-shadow: 3px 3px 3px black; margin-top: 7%; text-align: center; ">
+
+
+
+
+
+		<u>About</u></p>
+
+<p style="font-family: arial ;font-size: 20px; color: black; margin-top: 10%;
+margin-left: 10%; text-align: left; background-color: white; width:600px;
+padding: 5%; box-shadow: 2px 2px 2px black; border-radius: 5%;
+">
+	Hello! Welcome in My webssite, Are you like it?<br>
+	Actually this my project ,which show my progress
+	in HTML and CSS.
+	<br>
+	I am very Happy and satisfied to Create this,<br>
+	however, it is not complete yet.
+	<br><br><br><b>
+	<u>This website is in progress.</u><b>
+</p>
+
+
+<p style="font-family: arial ;font-size: 20px; color: black; margin-top: 10%;
+margin-left: 10%; text-align: left; background-color: white; width:600px;
+padding: 5%; box-shadow: 2px 2px 2px black; border-radius: 5%;
+">
+	I hope You enjoyed to see my <b>Project</b>.
+</p>
+	</div>
+</div>
+
+<div id="particles"></div>
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
