@@ -28,6 +28,18 @@ function checkTime(i) {
 			document.getElementById('sidebar').classList.toggle('active');
 		}
 
+
+
+function comment(){
+		var x = document.getElementById('comment').value;
+		if(x==""){
+			document.getElementById("feed").innerHTML='Please insert Text'
+			}else{
+				document.getElementById("feed").innerHTML='Thankyou for Your Feedback';
+			}
+
+		
+	}
 	</script>
 
 
@@ -94,6 +106,8 @@ padding: 5%; box-shadow: 2px 2px 2px black; border-radius: 5%;
 <div id="particles"></div>
 <script type="text/javascript" src="particles.js"></script>
 <script type="text/javascript" src="app.js"></script>
-
+<textarea id="comment" placeholder="Comment Here!"></textarea>
+<button id="feed" onclick="comment()">Submit</button>
+<p id="feed" color="red" font-size="20"></p>
 </body>
 </html>
