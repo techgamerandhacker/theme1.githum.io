@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
 	background: url();
 	background-size: cover;
@@ -345,4 +346,353 @@ a:hover{
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+=======
+body{
+	background: url();
+	background-size: cover;
+	background-repeat: no-repeat; 
+}
+	#feed{
+		background-color:white;
+		font-family: arial black;
+		font-size: 15px;
+		border-radius: 10px;
+		box-shadow: 2px 2px 2px black;
+		position: absolute;
+		top:370%;
+		left: 50%;
+		height: 40px;
+		
+		outline: none;
+		transition: .4s;
+	}
+#comment{
+			height: 200px;
+			width: 500px;
+			overflow: scroll;
+			border-bottom: 3px solid white;
+			font-size: 20px;
+			padding: 20px;
+			border-radius: 10px;
+			display: block;
+			position: absolute;
+			top:350%;
+			left: 10%;
+			background-color: ;
+		}
+		#comment::placeholder{
+			font-family: arial black;
+			color: rgba(255,0,0,.5);
+			text-transform: uppercase;
+		}
+		#comment::-webkit-scrollbar{
+			width: 20px;
+			cursor: pointer;
+			background-color: white;
+		}
+		#comment::-webkit-scrollbar-track{
+			width:18px;
+			background-color: white;
+			cursor: pointer;
+		}
+		#comment::-webkit-scrollbar-thumb{
+			background-color: red;
+			border-radius: 3px;
+			cursor: pointer;
+
+		}
+::-webkit-scrollbar{
+	background-image: url(1.png); 
+	width: 10px;
+}
+::-webkit-scrollbar-track{
+	background:lightblue ; 
+	width: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+	background:red ; 
+	
+	width: 10px;
+	box-shadow: 2px 2px 2px gray;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: rgba(255,0,0,0.6);
+}
+*{
+	margin: 0;
+	padding: 0;
+
+}
+#sidebar{
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	left: -50%;
+	background-color: black;
+	transition: .3s;
+	z-index: 999;
+}
+
+#sidebar li{
+	color:white;
+	font-family: arial black;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	padding: 30px;
+	border-bottom: 2px solid white;
+	text-align: center;
+}
+
+.toggle-btn{
+	position: absolute;
+	cursor: pointer;
+	left:102%;
+	top:15px;
+}
+.toggle-btn span{
+	display: block;
+	background-color: white;
+	width:30px;
+	height: 5px; 
+	margin: 3px;
+}
+ 
+ #sidebar.active{
+ 	left: 0%;
+ 	transition: .3s;
+ }
+
+#sidebar:hover{
+	
+	background-color: rgba(0,0,0,.5);
+	filter: contrast(1.8);
+}
+
+
+#sidebar ul{
+	list-style: none;
+}
+#sidebar li{
+	transition: .3s;
+}
+#sidebar  li:hover{
+	
+	transition: .3s;
+	color: gray;
+	cursor: pointer;
+	
+	overflow: hidden;
+}
+
+#sidebar  li:first-child:before{
+	content: '';
+	position: absolute;
+	background-image: linear-gradient(to right ,transparent,blue);
+
+	height: 97px;
+	width: 100px;
+	left:-99em;
+	top: -0em;
+	transition: .8s;
+	z-index: -1;
+}
+#sidebar  li:first-child:hover::before{
+	width: 100%;
+	left: 0;
+	transition: .4s;
+}
+
+#sidebar  li:nth-child(2):before{
+	content: '';
+	position: absolute;
+	background-image: linear-gradient(to right ,transparent,red);
+
+	height: 97px;
+	width: 100px;
+	left:-99em;
+	top: 3.8em;
+	transition: .8s;
+	z-index: -1;
+}
+#sidebar  li:nth-child(2):hover::before{
+	width: 100%;
+	left: 0;
+	transition: .4s;
+}
+
+
+#sidebar  li:nth-child(3):before{
+	content: '';
+	position: absolute;
+	background-image: linear-gradient(to right ,transparent,green);
+
+	height: 97px;
+	width: 100px;
+	left:-99em;
+	top: 7.6em;
+	transition: .8s;
+	z-index: -1;
+}
+#sidebar  li:nth-child(3):hover::before{
+	width: 100%;
+	left: 0;
+	transition: .4s;
+}
+
+#sidebar  li:nth-child(4):before{
+	content: '';
+	position: absolute;
+	background-image: linear-gradient(to right ,transparent,yellow);
+
+	height: 97px;
+	width: 100px;
+	left:-99em;
+	top:11.4em;
+	transition: .8s;
+	z-index: -1;
+}
+#sidebar  li:nth-child(4):hover::before{
+	width: 100%;
+	left: 0;
+	transition: .4s;
+}
+
+#sidebar  :after{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	
+	filter: blur(2px);
+	z-index: -2;
+	right: 0;
+	top:0;
+	background-attachment: fixed; 
+}
+
+.w1{
+	width: 100%;
+	height: 100vh;
+	position:absolute;
+	z-index: -9999;
+	background-image: url(images/9.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-top: 0;
+}
+
+.w2{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	z-index: -9999;
+	background-image: url(images/10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-top:50%;
+}
+
+.w3{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	z-index: -9999;
+	background-image: url(images/11.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-top: 100%;
+}
+
+.w4{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	z-index: -9999;
+	background-image: url(images/12.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin-top: 150%;
+}
+.background{
+	background-position: center; 
+}
+.curve{
+	height: 2500px;
+	width: 100%;
+	clip-path: polygon(50% 0%, 100% 3%, 100% 100%, 0 100%, 0 3%);
+
+	position: absolute;
+	background-color: rgba(255,255,255,.6);
+	color: black;
+	z-index: -1;
+	top:70%;
+	background-attachment: fixed;
+	overflow:scroll;
+}
+#txt{
+	position: absolute;
+	background: url(images/12.jpg);
+	box-shadow: 2px 2px 2px lightblue;
+	padding-right: 4px; 
+	background-size: cover;
+	font-size: 30px;
+	-webkit-background-clip:text;
+	color: transparent;
+	right: 5%;
+	top:15%;
+	font-family:  sans-serif;
+	cursor: pointer;
+	height: 40px;
+	width: 100px;
+}
+#particles{
+	line-height: 100%;
+}
+#logo {
+	position: absolute;
+	border: 2px solid white;
+	height: 50px;
+	width: 120px;
+	padding-right: 50px; 
+	padding-top: 5px ;
+	padding-bottom:  5px ;
+	background-color: black;
+	text-align: center;
+	right:5%;
+	top: 5%;
+	box-shadow: 3px 3px 3px  gray;
+	transition: .4s;
+
+}
+#logo img{
+	
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	height: 50px;
+	width: 50px;
+}
+#logo:hover{
+	transform: scale(1.6);
+	transition: .4s;
+	cursor: pointer;
+}
+a{
+	color: white;
+	text-decoration: none;
+	transition: .4s;
+}
+a:hover{
+	color: gray;
+	transition: .4s;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+>>>>>>> 571fab92186bbb9c64a5e88f90af33a22206bc85
 	
