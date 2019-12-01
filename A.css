@@ -3,6 +3,7 @@ body{
 	background: url();
 	background-size: cover;
 	background-repeat: no-repeat; 
+	
 }
 	#feed{
 		background-color:white;
@@ -102,6 +103,9 @@ body{
 	left:102%;
 	top:15px;
 }
+
+
+
 .toggle-btn span{
 	display: block;
 	background-color: white;
@@ -124,22 +128,25 @@ body{
 
 #sidebar ul{
 	list-style: none;
+
 }
 #sidebar li{
 	transition: .3s;
+	
 }
 #sidebar  li:hover{
 	
 	transition: .3s;
+	
 	color: gray;
 	cursor: pointer;
 	
-	overflow: hidden;
+	
 }
 
 #sidebar  li:first-child:before{
 	content: '';
-	position: absolute;
+	position: relative;
 	background-image: linear-gradient(to right ,transparent,blue);
 
 	height: 97px;
@@ -157,7 +164,7 @@ body{
 
 #sidebar  li:nth-child(2):before{
 	content: '';
-	position: absolute;
+	position: relative;
 	background-image: linear-gradient(to right ,transparent,red);
 
 	height: 97px;
@@ -216,7 +223,7 @@ body{
 	height: 100%;
 	width: 100%;
 	
-	filter: blur(2px);
+	
 	z-index: -2;
 	right: 0;
 	top:0;
@@ -286,25 +293,8 @@ body{
 	background-attachment: fixed;
 	overflow:scroll;
 }
-#txt{
-	position: absolute;
-	background: url(images/12.jpg);
-	box-shadow: 2px 2px 2px lightblue;
-	padding-right: 4px; 
-	background-size: cover;
-	font-size: 30px;
-	-webkit-background-clip:text;
-	color: transparent;
-	right: 5%;
-	top:15%;
-	font-family:  sans-serif;
-	cursor: pointer;
-	height: 40px;
-	width: 100px;
-}
-#particles{
-	line-height: 100%;
-}
+
+
 #logo {
 	position: absolute;
 	border: 2px solid white;
@@ -635,7 +625,7 @@ body{
 	background-attachment: fixed;
 	overflow:scroll;
 }
-#txt{
+/*#txt{
 	position: absolute;
 	background: url(images/12.jpg);
 	box-shadow: 2px 2px 2px lightblue;
@@ -645,12 +635,12 @@ body{
 	-webkit-background-clip:text;
 	color: transparent;
 	right: 5%;
-	top:15%;
+	top:20%;
 	font-family:  sans-serif;
 	cursor: pointer;
 	height: 40px;
 	width: 100px;
-}
+}*/
 #particles{
 	line-height: 100%;
 }
@@ -993,15 +983,13 @@ body{
 	-webkit-background-clip:text;
 	color: transparent;
 	right: 5%;
-	top:15%;
+	top:120px;
 	font-family:  sans-serif;
 	cursor: pointer;
 	height: 40px;
 	width: 100px;
 }
-#particles{
-	line-height: 100%;
-}
+
 #logo {
 	position: absolute;
 	border: 2px solid white;
@@ -1043,3 +1031,90 @@ a:hover{
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+
+
+/*mobile css*/
+@media screen and (max-width:1000px){
+body{
+	background: url(images/10.jpg);
+	background-size: ;
+	
+}
+
+#txt{
+	display: none;
+}	
+.w1{display: none;}
+.w2{display: none;}
+.w3{display: none;}
+.w4{display: none;}
+.curve{
+	height: 1800px;
+	width: 100%;
+	clip-path: none;
+	margin-bottom: 300px;
+	position: absolute;
+	background-color: rgba(255,255,255,.6);
+	color: black;
+	z-index: -1;
+	top:30%;
+	background-attachment: fixed;
+	overflow:scroll;
+}
+
+
+#particles{
+	display: none;
+}
+#feed{
+		background-color:white;
+		font-family: arial black;
+		font-size: 15px;
+		border-radius: 10px;
+		box-shadow: 2px 2px 2px black;
+		position: absolute;
+		top:1850px;
+		left: 52%;
+		height: 40px;
+		transform: scale(2);
+		outline: none;
+		transition: .4s;
+	}
+#comment{
+			height: 200px;
+			width: 500px;
+			overflow: scroll;
+			border-bottom: 3px solid white;
+			font-size: 20px;
+			padding: 20px;
+			border-radius: 10px;
+			
+			
+			top:1500px;
+			left: 10%;
+			background-color: ;
+			
+		}
+		#comment::placeholder{
+			font-family: arial black;
+			color: rgba(255,0,0,.5);
+			text-transform: uppercase;
+		}
+		#comment::-webkit-scrollbar{
+			width: 20px;
+			cursor: pointer;
+			background-color: white;
+		}
+		#comment::-webkit-scrollbar-track{
+			width:18px;
+			background-color: white;
+			cursor: pointer;
+		}
+		#comment::-webkit-scrollbar-thumb{
+			background-color: red;
+			border-radius: 3px;
+			cursor: pointer;
+
+		}
+}
