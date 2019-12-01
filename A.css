@@ -1041,6 +1041,15 @@ body{
 	background-size: ;
 	
 }
+.toggle-btn{
+	transform: scale(2.1);
+	top: 3%;
+	padding-left: 5%;
+}
+#sidebar{
+	font-size: 30px;
+	filter: blur(0);
+}
 
 #txt{
 	display: none;
@@ -1117,4 +1126,40 @@ body{
 			cursor: pointer;
 
 		}
+#sidebar  li:first-child:before{
+	content: '';
+	display: none;
+}
+#sidebar  li:first-child:hover::before{
+	display: none;
+}
+
+#sidebar  li:nth-child(2):before{
+	display: none;
+}
+#sidebar  li:nth-child(2):hover::before{
+	display: none;
+}
+
+
+#sidebar  li:nth-child(3):before{
+	display: none;
+}
+#sidebar  li:nth-child(3):hover::before{
+	display: none;
+}
+
+#sidebar  li:nth-child(4):before{
+	display: none;
+}
+#sidebar  li:nth-child(4):hover::before{
+	display: none;
+}
+#logo{
+	transform: scale(1.5);
+	right: 10%;
+}
+#logo:hover{
+	transform: scale(2);
+}
 }
